@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>a66db55e-9361-4ed2-b850-03a2eb624f11</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HigherOrderFunctions.Curry.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="HigherOrderFunctions.Curry.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiscriminatedUnion.Core" Version="2.0.0.1" />
+    <PackageReference Include="DiscriminatedUnion.Json" Version="2.0.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
