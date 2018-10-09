@@ -16,16 +16,6 @@ namespace FPTalk1
     {
         public static void Main(string[] args)
         {
-
-			////var x = (""
-			////	.Match<ITypeContainer>()
-			////	.Case(c => c == "text/json", v => new TypedContainer<Json>(new Json()) )
-			////	.Case(c => c == "application/json", v => new TypedContainer<Json>(new Json()) as ITypeContainer)
-			////	.Case(c => c == "text/url", v => new TypedContainer<Url>(new Content.Url()) as ITypeContainer)
-			////	.Case(c => c == "text/plain", v => new TypedContainer<Plain>(new Plain()) as ITypeContainer)
-			////	.Case(c => c == "application/octet-stream", v => new TypedContainer<OctetStream>(new OctetStream()) as ITypeContainer)
-			////	.Default(() => new TypedContainer<Plain>(new Plain()) as ITypeContainer));
-
 			BuildWebHost(args).Run();
         }
 

@@ -29,7 +29,6 @@ namespace FPTalk1
 		{
 		}
 
-
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
@@ -38,14 +37,10 @@ namespace FPTalk1
 				app.UseDeveloperExceptionPage();
 			}
 
-			// string -> string
-			Func<string, string> testfun = a => $"Hello {a}";
-
-			var req = ((uri: new Uri("/testing"), verb: Post.Value), testfun.ToJsonHandler());
-
-			app.UseContextWriter(req);
-
-
+			var filter = MethodFilter(RequestMethod.POST).And(PathFilter("/"));
+			
+			app.Use(Middleware(filter, fun((string a) => $"Hello {a}").Jsonify()));
+			app.Use(Middleware(h => true, fun((string a) => $"Goodbye").Jsonify()));
 		}
 
 	}

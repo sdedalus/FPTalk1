@@ -5,6 +5,10 @@
     <UserSecretsId>a66db55e-9361-4ed2-b850-03a2eb624f11</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="HigherOrderFunctions.Curry.cs" />
   </ItemGroup>

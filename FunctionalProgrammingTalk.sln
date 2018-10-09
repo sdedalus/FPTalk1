@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPTalk1", "FPTalk1\FPTalk1.csproj", "{641FF9CD-EC0A-4D53-8188-84311F18F16F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FPTalk1", "FPTalk1\FPTalk1.csproj", "{641FF9CD-EC0A-4D53-8188-84311F18F16F}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FPTalk2", "FPTalk2\FPTalk2.fsproj", "{A2E4B3F0-A411-45E1-A8EE-71861E01ACFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{641FF9CD-EC0A-4D53-8188-84311F18F16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{641FF9CD-EC0A-4D53-8188-84311F18F16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{641FF9CD-EC0A-4D53-8188-84311F18F16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E4B3F0-A411-45E1-A8EE-71861E01ACFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E4B3F0-A411-45E1-A8EE-71861E01ACFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E4B3F0-A411-45E1-A8EE-71861E01ACFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E4B3F0-A411-45E1-A8EE-71861E01ACFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
